@@ -11,12 +11,18 @@ body {
   /* background-color: black; */
 }
 
+.container {
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+}
+
 #site-header {
   height: auto;
   width: 100%;
   position: relative;
   color: #fff;
-  background-color: #050505;
+  background-color: #000;
 }
 
 #drop-down-menu {
@@ -32,6 +38,13 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.menu {
   float: left;
   display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 50px;
+  font-size: 20px;
 }
