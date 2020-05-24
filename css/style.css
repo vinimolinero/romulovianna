@@ -65,3 +65,13 @@ a {
 p {
   display: inline-block;
 }
+
+#romulo {
+  font-style: 68px;
+  color: brown;
+}
+
+#descricao {
+  font-style: 19px;
+  color: #fff;
+}
