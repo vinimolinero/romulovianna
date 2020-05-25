@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,18 +12,19 @@ a {
   color: #fff;
   text-decoration: none;
 
-}
+} */
 
 .container {
   background-image: url("img/background-music.jpg");
-  background-attachment: fixed;
+  /*background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 1090px;
-  width: 100%;
+  width: 100%; */
 }
 
+/* 
 #site-header {
   height: 50px;
   width: 100%;
@@ -73,5 +74,5 @@ p {
 
 #descricao {
   font-style: 19px;
-  color: #fff;
-}
+  color: orangered;
+} */
