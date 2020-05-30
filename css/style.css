@@ -1,78 +1,99 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: 0 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-a {
-  color: #fff;
-  text-decoration: none;
-
-} */
-
-.container {
-  background-image: url("img/background-music.jpg");
-  /*background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1090px;
-  width: 100%; */
-}
-
-/* 
-#site-header {
-  height: 50px;
-  width: 100%;
-  position: relative;
-  color: #fff;
-  background-color: #252424;
-  padding: 0;
-
-}
-
-#drop-down-menu {
-  position: relative;
-  margin: 17px 0px 12px calc((100% - 980px) * 0.5);
-  left: 0px;
-  grid-area: 1 / 1 / 2 / 2;
-  justify-self: start;
-  align-self: start;
-
-}
-
-#ul-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-}
-
-.menu {
-  float: left;
-  display: inline;
-  margin-left: 15px;
-  width: auto;
-  font-size: 13px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #6b35b3;
-  padding: 5px;
-}
-
+/* Estilos gerais */
 p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fec63e;
+  padding: 15px 0;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.header-menu ul li {
   display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
 }
 
-#romulo {
-  font-style: 68px;
-  color: brown;
+.header-menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  /* padding para aumentar a área clicável */
+  padding: 10px 0;
 }
 
-#descricao {
-  font-style: 19px;
-  color: orangered;
-} */
+.header-menu ul li a:hover {
+  color: #fff;
+}
+
+/* Introdução */
+
+.introducao {
+  width: 100%;
+  height: 1090px;
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 100px;
+  background: url("../img/background-music.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-externo {
+  max-width: 460px;
+  margin: 0 auto 40px auto;
+  color: #fff;
+}
+
+.quote-externo p {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.quote-externo p:before, .quote-externo p:after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}

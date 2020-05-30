@@ -4,34 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Romulo Viana</title>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <div id="site-header">
-        <div id="drop-down-menu">
-          <nav id="drop-down-menu-nav">
-            <ul id="ul-nav">
-              <li class="menu"><a href="index.html">Home</a></li>
-              <li class="menu"><a href="news.html">News</a></li>
-              <li class="menu"><a href="contact.html">Contact</a></li>
-              <li class="menu"><a href="about.html">About</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.png" alt="Bikcraft">
+      </a>
+      <nav class="grid-12 header-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <p id="romulo">Romulo Viana</p>
-    <p id="descricao"> Brazilian Guitarist, Teacher and Arranger</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, debitis voluptatem laudantium dicta incidunt magni in illum! Eligendi aliquid deserunt similique fugit, at commodi rem harum neque quia maxime quas?</p>
-  </div>
+  <section class="introducao">
+    <div class="container">
+      <h1 class="nome">Romulo Viana</h1>
+      <blockquote class="quote-externo">
+        <p>Brazilian Guitarist, Teacher and Arranger</p>
+      </blockquote>
+      <a href="contact.html" class="btn">Contact</a>
+    </div>
+  </section>
 
 </body>
 
