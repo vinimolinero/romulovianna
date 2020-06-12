@@ -27,7 +27,9 @@ p {
   position: fixed;
   top: 0;
   /* width: 100%; */
-  /* Testar as cores de background para o navbar */
+  /* 
+  Testar as cores de background para o navbar 
+  */
   /* background: #000; */
   background: #333;
   /* background: #868789; */
@@ -86,14 +88,18 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  /* Testando fonte */
+  /* 
+  Testando fonte 
+  */
   font-family: neue-haas-unica,sans-serif;
   font-weight: 400;
   font-style: normal;
   /* Testando fonte */
   font-size: 14px;
   line-height: 20px;
-  /* padding para aumentar a área clicável */
+  /* 
+  padding para aumentar a área clicável 
+  */
   padding: 10px 0;
 }
 
@@ -108,7 +114,9 @@ p {
   height: 1090px;
   /* margin-top: 80px; */
   text-align: center;
-  /* Alinhamento vertical do texto central */
+  /* 
+  Alinhamento vertical do texto central 
+  */
   padding-top: 220px;
   background: url("../img/background-music.jpg");
   background-size: cover;
@@ -120,7 +128,9 @@ p {
 .introducao h1 {
   font-size: 48px;
   /* color: rgb(105, 96, 70); */
-  /* Original color from Wix Template */
+  /* 
+  Original color from Wix Template 
+  */
   color: #A3956D;
   font-family: 'Cinzel', serif;
   font-weight: bold;
