@@ -28,18 +28,50 @@ p {
   top: 0;
   width: 100%;
   background: #000;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   z-index: 10;
+  height: 50px;
+  flex-direction: column;
+  display: flex;
+  /* vertical-align: auto; */
+  align-items: center;
+  justify-content: space-between;
 }
+
+.header .container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .header img {
+  height: 35px;
+} */
 
 .header-menu {
   text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-menu ul {
+  display: flex;
+  /* vertical-align: baseline; */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu ul li {
-  display: inline-block;
-  margin-left: 25px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* display: inline-block; */
+  /* margin-left: 25px; */
+  /* margin-top: 20px; */
 }
 
 .header-menu ul li a {
@@ -47,6 +79,11 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  /* Testando fonte */
+  font-family: neue-haas-unica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* Testando fonte */
   font-size: 14px;
   line-height: 20px;
   /* padding para aumentar a área clicável */
@@ -143,9 +180,16 @@ p {
  }
 
  .footer-redes ul li a {
-   border: 3px solid #fec63e;
+   /* border: 3px solid #fec63e; */
    display: block;
    padding: 10px;
+   height: 14px;
+   width: 14px;
+  }
+
+  .footer-redes ul li a img {
+    height: 14px;
+    width: 14px;
  }
 
  .footer-redes ul li a:hover {
