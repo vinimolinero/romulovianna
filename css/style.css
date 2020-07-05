@@ -1,50 +1,29 @@
 /* ============================== Estilos gerais ==============================  */
 :root {
-  --title-color: #A3956D;
+  --title-color: #a3956d;
   --text-color: #e7bf62;
 }
 
 p {
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
   line-height: 20px;
 }
-
 
 /* ============================== HEADER ==============================  */
 .header {
   position: fixed;
   top: 0;
-  /* width: 100%; */
-  /* 
-  Testar as cores de background para o navbar 
-  */
-  /* background: #000; */
-  /* background: #333; */
   background-image: linear-gradient(to bottom right, #333133, #555553);
-  /* background: #868789; */
-  /* padding: 15px 0; */
   z-index: 10;
-  /* height: 50px; */
-  /* flex-direction: column; */
-  /* display: flex; */
-  /* vertical-align: auto; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
 }
 
 .header .container {
-  /* flex-direction: column; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
   width: 100vw;
 }
-
-/* .header img {
-  height: 35px;
-} */
 
 .header-menu {
   text-align: left;
@@ -56,7 +35,7 @@ p {
 
 .header-menu ul {
   display: flex;
-  /* vertical-align: baseline; */
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -67,31 +46,19 @@ p {
   align-items: center;
   justify-content: space-between;
   display: inline-block;
-  /* vertical-align: text-bottom; */
   margin-left: 25px;
-  /* margin-top: 0; */
 }
 
 .header-menu ul li a {
-  /* color: var(--title-color); */
   color: var(--text-color);
-  /* color: #e7bf62; */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  /* 
-  Testando fonte 
-  */
-  font-family: neue-haas-unica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* Testando fonte */
   font-size: 12px;
-  /* text-shadow: 2px 2px 4px #000000; */
   line-height: 20px;
-  /* 
-  padding para aumentar a área clicável 
-  */
+  /* padding para aumentar a área clicável */
   padding: 10px 0;
   transition: opacity 0.2s;
 }
@@ -106,48 +73,47 @@ p {
 .introducao {
   width: 100%;
   height: 1090px;
-  /* margin-top: 80px; */
   text-align: center;
   /* 
   Alinhamento vertical do texto central 
   */
   padding-top: 220px;
-  /* background: url("../img/background-music.jpg"); */
-  background: url("../img/romulovianna-3.jpg");
+  background: url("../img/photo-panoramic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
 }
+  
+section div p {
+    font-family: "Crimson Text", serif;
+    font-size: 70px;
+  }
+
 
 .introducao h1 {
   font-size: 48px;
-  /* color: rgb(105, 96, 70); */
-  /* 
-  Original color from Wix Template 
-  */
   color: var(--title-color);
-  font-family: 'Cinzel', serif;
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.quote-externo {
-  max-width: 460px;
+.descricao {
+  /* max-width: 460px; */
   margin: 0 auto 40px auto;
   color: #fff;
   padding: 10px;
 }
 
-.quote-externo p {
+.descricao p {
   font-style: italic;
   font-size: 20px;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.quote-externo p:before,
-.quote-externo p:after {
+.descricao p:before,
+.descricao p:after {
   content: "";
   display: block;
   width: 300px;
@@ -157,17 +123,13 @@ p {
   margin: 20px auto 20px auto;
 }
 
-.introducao .container a {
+section div .container a {
   color: var(--title-color);
-  /* text-shadow: 2px 2px 4px #000000; */
   text-shadow: 1px 1px 3px #333;
-  /* text-shadow: 1px 1px 9px #333; */
 }
 
 .btn {
-  /* border: 3px solid rgb(105, 96, 70); */
   border: 3px solid var(--title-color);
-  /* box-shadow: 1px 1px 9px #333; */
   box-shadow: 0px 0px 1px #333;
   padding: 10px 30px;
   color: rgb(105, 96, 70);
@@ -175,84 +137,75 @@ p {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   transition: opacity 0.2s;
 }
 
 .btn:hover {
-  /* color: #fff; */
-  /* color: var(--text-color); */
-  /* border-color: #fff; */
-  /* border-color: var(--text-color); */
   border-color: var(--title-color);
   opacity: 0.7;
 }
+
 /* ============================== Footer ==============================  */
 
 .footer {
   width: 100%;
-  /* background: #000; */
-  background: #333;
+  background-image: linear-gradient(to bottom right, #333133, #555553);
   color: #f7f7f7;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
-.footer h3 {
+.footer ul li h3 {
   font-size: 14px;
   line-height: 25px;
-  /* color: #fec63e; */
   color: var(--text-color);
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-weight: bold;
-  /* text-shadow: 2px 2px 4px #000000; */
 }
 
-.footer h3:after {
+/* linha divisória entre titulo e conteúdo. REMOVER
+
+ .footer h3:after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
-  /* background: #fec63e; */
   color: var(--text-color);
   margin: 6px 0 12px 0;
+} */
+
+.footer-phrase {
+  padding-right: 40px;
 }
 
-.footer-historia {
-  padding-right: 40px;
- }
+.footer-contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Crimson Text", serif;
+}
 
- .footer-contato ul li {
-   font-size: 14px;
-   line-height: 20px;
-   font-family: Georgia, "Times New Roman", serif;
- }
-
- .footer-redes ul li {
+.footer-redes ul li {
   display: inline-block;
   margin-right: 10px;
- }
+}
 
- .footer-redes ul li a {
-   /* border: 3px solid #fec63e; */
-   display: block;
-   padding: 10px;
-   height: 14px;
-   width: 14px;
-  }
+.footer-redes ul li a {
+  display: block;
+  padding: 5px;
+}
 
-  .footer-redes ul li a img {
-    height: 14px;
-    width: 14px;
- }
+.footer-redes ul li a img {
+  height: 18px;
+  width: 18px;
+}
 
- .footer-redes ul li a:hover {
-   border-color: #fff;
- }
+.footer-redes ul li a img:hover {
+  /* border: 1px solid #fec63e; */
+}
 
- .copy {
-   width: 100%;
-   /* background: #fec63e; */
-   background: var(--text-color);
-   padding: 14px 0;
- }
+.copyright {
+  width: 100%;
+  background: var(--text-color);
+  padding: 14px 0;
+}
