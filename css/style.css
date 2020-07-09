@@ -2,14 +2,13 @@
 :root {
   --title-color: #a3956d;
   --text-color: #e7bf62;
+  
 }
 
-p {
-  font-size: 14px;
-  line-height: 20px;
-}
+  
 
 /* ============================== HEADER ==============================  */
+
 .header {
   position: fixed;
   top: 0;
@@ -25,7 +24,7 @@ p {
   width: 100vw;
 }
 
-.header-menu {
+.header .container .header-menu {
   text-align: left;
   display: flex;
   align-items: center;
@@ -33,39 +32,50 @@ p {
   justify-content: center;
 }
 
-.header-menu ul {
+.header .container .header-menu ul {
   display: flex;
-  
   align-items: center;
   justify-content: space-between;
 }
 
-.header-menu ul li {
+.header .container .header-menu ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
-.header-menu ul li a {
+.header .container .header-menu ul li a {
   color: var(--text-color);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   /* padding para aumentar a área clicável */
   padding: 10px 0;
-  transition: opacity 0.2s;
 }
 
-.header-menu ul li a:hover {
+.header .container .header-menu ul li a:hover {
   color: #fff;
-  opacity: 0.7;
+}
+
+.logo-redes ul li {
+  display: inline-block;
+  margin-right: 0 8px;
+}
+
+.logo-redes ul li a {
+  display: block;
+  padding: 5px 7px 5px 0;
+}
+
+.logo-redes ul li a img {
+  height: 18px;
+  width: 18px;
 }
 
 /* ============================== Introduçao ==============================  */
@@ -73,66 +83,58 @@ p {
 .introducao {
   width: 100%;
   height: 1090px;
-  text-align: center;
-  /* 
-  Alinhamento vertical do texto central 
-  */
-  padding-top: 220px;
+  text-align: left;
+  padding-top: 250px;
   background: url("../img/photo-panoramic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
 }
-  
-section div p {
-    font-family: "Crimson Text", serif;
-    font-size: 70px;
-  }
 
+.introducao .container {
+  padding: 40px 0;
+  background-color: rosybrown;
+  text-align: center;
+  display: block;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
 
-.introducao h1 {
-  font-size: 48px;
-  color: var(--title-color);
+.introducao .container h1,
+p {
+  font-family: "Crimson Text", serif;
+}
+
+.introducao .container h1 {
+  font-size: 60px;
+  color: var(--text-color);
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.descricao {
-  /* max-width: 460px; */
+.introducao .container p {
   margin: 0 auto 40px auto;
-  color: #fff;
   padding: 10px;
-}
-
-.descricao p {
+  color: #fff;
   font-style: italic;
-  font-size: 20px;
+  font-size: 24px;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.descricao p:before,
-.descricao p:after {
-  content: "";
-  display: block;
-  width: 300px;
-  height: 3px;
-  background: #fff;
-  box-shadow: 2px 2px 8px #000000;
-  margin: 20px auto 20px auto;
-}
-
-section div .container a {
+.introducao .container a {
   color: var(--title-color);
   text-shadow: 1px 1px 3px #333;
+  background-image: linear-gradient(to bottom right, #333133, #555553);
 }
 
 .btn {
-  border: 3px solid var(--title-color);
+  border: 3px solid var(--text-color);
   box-shadow: 0px 0px 1px #333;
   padding: 10px 30px;
-  color: rgb(105, 96, 70);
+  color: var(--text-color);
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -164,17 +166,6 @@ section div .container a {
   font-weight: bold;
 }
 
-/* linha divisória entre titulo e conteúdo. REMOVER
-
- .footer h3:after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  color: var(--text-color);
-  margin: 6px 0 12px 0;
-} */
-
 .footer-phrase {
   padding-right: 40px;
 }
@@ -185,27 +176,13 @@ section div .container a {
   font-family: "Crimson Text", serif;
 }
 
-.footer-redes ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.footer-redes ul li a {
-  display: block;
-  padding: 5px;
-}
-
-.footer-redes ul li a img {
-  height: 18px;
-  width: 18px;
-}
-
-.footer-redes ul li a img:hover {
-  /* border: 1px solid #fec63e; */
-}
-
 .copyright {
   width: 100%;
   background: var(--text-color);
   padding: 14px 0;
 }
+
+/* = = = = = = = =PENDENCIAS = = = = = = = = = = = = = =
+1- Alinhar a SECTION (.introducao .container) junto ao MENU.
+2- 
+*/
