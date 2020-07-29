@@ -5,14 +5,12 @@
   
 }
 
-  
-
 /* ============================== HEADER ==============================  */
 
 .header {
   position: fixed;
   top: 0;
-  background-image: linear-gradient(to bottom right, #333133, #555553);
+  background-image: linear-gradient(to bottom right, #474747, #202020);
   z-index: 10;
 }
 
@@ -127,7 +125,7 @@ p {
 .introducao .container a {
   color: var(--title-color);
   text-shadow: 1px 1px 3px #333;
-  background-image: linear-gradient(to bottom right, #333133, #555553);
+  background-image: linear-gradient(to bottom right, #474747, #202020);
 }
 
 .btn {
@@ -152,7 +150,7 @@ p {
 
 .footer {
   width: 100%;
-  background-image: linear-gradient(to bottom right, #333133, #555553);
+  background-image: linear-gradient(to bottom right, #474747, #202020);
   color: #f7f7f7;
   padding: 5px 0;
 }
@@ -166,8 +164,8 @@ p {
   font-weight: bold;
 }
 
-.footer-phrase {
-  padding-right: 40px;
+.footer-contato {
+  padding-right: 140px;
 }
 
 .footer-contato ul li {
@@ -179,7 +177,8 @@ p {
 .copyright {
   width: 100%;
   background: var(--text-color);
-  padding: 14px 0;
+  padding: 5px 0;
+  font-size: 12px;
 }
 
 /* = = = = = = = =PENDENCIAS = = = = = = = = = = = = = =
